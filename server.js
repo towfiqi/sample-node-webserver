@@ -63,6 +63,12 @@ app.get('/bad', (req, res) => {
 });
 
 
+app.get('/projects', (req, res)=>{
+    res.render('projects.hbs', {
+        pageTitle: 'Our Projects',
+        content: 'This is our Projects page and its currently is being rebuilt. Please check back after a few days.'
+    });
+});
 
 
 app.listen(port, () => {
